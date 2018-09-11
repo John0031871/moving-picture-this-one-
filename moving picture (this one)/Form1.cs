@@ -16,7 +16,7 @@ namespace moving_picture__this_one_
         {
             InitializeComponent();
         }
-
+        // moves picture to the right
         private void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
@@ -26,10 +26,25 @@ namespace moving_picture__this_one_
         {
 
         }
-
+        // moves picture to the left
         private void button2_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        // moves picture up
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.Y + 5, pictureBox1.Location.X);
+        }
+        // moves picture down
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.Y - 5, pictureBox1.Location.X);
         }
     }
 }
