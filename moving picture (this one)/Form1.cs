@@ -16,5 +16,20 @@ namespace moving_picture__this_one_
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e) 
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
+        }
     }
 }
